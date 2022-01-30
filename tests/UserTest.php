@@ -15,13 +15,13 @@ final class UserTest extends TestCase
 
     public function testCannotBeCreatedFromInvalidLogin(): void
     {
-        User::ensureIsValidUser("Ha", "passws");
+        User::ensureIsValidUser("Haasf", "passws");
     }
 
     public function testCannotBeCreatedFromInvalidPass(): void
     {
 
-        User::ensureIsValidUser("Haha", "pa");
+        User::ensureIsValidUser("Haha", "pasad");
 
     }
 }
