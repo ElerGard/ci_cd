@@ -19,5 +19,8 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
 
-      - name: Use PHPunit
+      - name: Use php_unit
         run: vendor/bin/phpunit
+
+      - name: Use ecs
+        run: vendor/bin/ecs check src
